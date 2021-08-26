@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:news_app_api/modules/search/search.dart';
+import 'package:news_app_api/shared/components/components.dart';
 import 'package:news_app_api/shared/cubit/cubit.dart';
 import 'package:news_app_api/shared/cubit/states.dart';
 
@@ -21,7 +23,7 @@ class HomeLayout extends StatelessWidget {
             actions: [
               IconButton(
                 onPressed: () {
-
+                  navigateTo(context, Search());
                 },
                 icon: Icon(
                   Icons.search,
